@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { CardComponent } from './card/card.component';
 import { LeftSectionComponent } from './left-section/left-section.component';
 import { QuoteComponent } from './quote/quote.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { QuoteComponent } from './quote/quote.component';
     HeaderComponent,
     CardComponent,
     LeftSectionComponent,
-    QuoteComponent
+    QuoteComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
