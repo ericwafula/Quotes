@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Quotes } from './../quotes';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-details',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
+  @Input() author: Quotes;
   constructor() { }
 
   ngOnInit(): void {

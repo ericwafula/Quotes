@@ -1,5 +1,6 @@
-<ul>
-    <div *ngFor='let quote of quotes'>
+<ul *ngFor='let quote of quotes'>
+    <div class="quote-card">
         <li> {{quote.quote}} </li>
+        <app-details [author] = 'quote'></app-details>
     </div>
 </ul>

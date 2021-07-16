@@ -12,8 +12,8 @@ export class QuoteComponent implements OnInit {
 
   quotes:Quotes[] = [
     new Quotes("When something is important enough, you do it even if the odds are not in your favor.", "Elon Musk", "Eric Wathome"),
-    new Quotes("When something is important enough, you do it even if the odds are not in your favor.", "Elon Musk", "Eric Wathome"),
-    new Quotes("When something is important enough, you do it even if the odds are not in your favor.", "Elon Musk", "Eric Wathome")
+    new Quotes("If you get up in the morning and think the future is going to be better, it is a bright day. Otherwise, it's not.", "Elon Musk", "Eric Wathome"),
+    new Quotes("If you're trying to create a company, it's like baking a cake. You have to have all the ingredients in the right proportion.", "Elon Musk", "Eric Wathome")
   ]
 
   ngOnInit(): void {
