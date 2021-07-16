@@ -1,3 +1,4 @@
+import { Quotes } from './../quotes';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,6 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class QuoteComponent implements OnInit {
 
   constructor() { }
+
+  quotes:Quotes[] = [
+    new Quotes("When something is important enough, you do it even if the odds are not in your favor.", "Elon Musk", "Eric Wathome"),
+    new Quotes("When something is important enough, you do it even if the odds are not in your favor.", "Elon Musk", "Eric Wathome"),
+    new Quotes("When something is important enough, you do it even if the odds are not in your favor.", "Elon Musk", "Eric Wathome"),
+    new Quotes("When something is important enough, you do it even if the odds are not in your favor.", "Elon Musk", "Eric Wathome")
+  ]
 
   ngOnInit(): void {
   }
