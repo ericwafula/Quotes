@@ -1,5 +1,9 @@
 p{
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 20px;   
+}
+
+#contributor{
     margin-bottom: 60px;
+    color: white;
 }

@@ -1,6 +1,7 @@
 ul{
     list-style: none;
     font-size: 18px;
+    position: relative;
 }
 
 li{
@@ -13,4 +14,6 @@ li{
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 20px;
+    position: relative;
+    right: 30px;
 }
