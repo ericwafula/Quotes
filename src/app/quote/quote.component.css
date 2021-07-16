@@ -6,3 +6,11 @@ ul{
 li{
     font-family: 'Indie Flower', cursive;
 }
+
+.quote-card{
+    background-color: #DFBFAA;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+}
