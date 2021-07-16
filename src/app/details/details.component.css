@@ -4,6 +4,18 @@ p{
 }
 
 #contributor{
-    margin-bottom: 60px;
     color: white;
+}
+
+.delete{
+    margin-bottom: -25px;
+    border: solid #F18881 1px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
 }
