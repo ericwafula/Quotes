@@ -16,6 +16,13 @@ export class QuoteComponent implements OnInit {
     new Quotes("If you're trying to create a company, it's like baking a cake. You have to have all the ingredients in the right proportion.", "Elon Musk", "Eric Wathome")
   ]
 
+  deleteCard(isToDelete: boolean, index: number){
+    isToDelete = confirm("Are you sure you want to delete this Quote?");
+
+    if (isToDelete){
+      this.quotes.splice(index, 1);
+    }
+  }
   ngOnInit(): void {
   }
 

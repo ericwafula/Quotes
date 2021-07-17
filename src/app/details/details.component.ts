@@ -1,5 +1,5 @@
 import { Quotes } from './../quotes';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-details',
@@ -9,6 +9,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class DetailsComponent implements OnInit {
 
   @Input() author: Quotes;
+  @Output() isToDelete = new EventEmitter<boolean>();
+
+  deleteCard(deleteNow: boolean){
+    this.isToDelete.emit(deleteNow);
+  }
+
   constructor() { }
 
   ngOnInit(): void {
