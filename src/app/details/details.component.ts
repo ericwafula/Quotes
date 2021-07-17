@@ -22,7 +22,7 @@ export class DetailsComponent implements OnInit {
 
   constructor() { }
 
-  like: number = 0;
+  // like: number = 0;
   dislike: number = 0;
 
   decreaseLikes(){
