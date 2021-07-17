@@ -24,8 +24,8 @@
                             <div class="row">
                                 <!-- like -->
                                 <div class="col-md-6" id="like">
-                                    <img src="../../assets/Images/like.svg" alt="like" (click)='increaseLikes()'>
-                                    <p> {{like}} </p>
+                                    <img src="../../assets/Images/like.svg" alt="like" (click)='increaseLikes(true)' appHighlight>
+                                    <p> {{author.upvote}} </p>
                                 </div>
                                 <!-- dislike -->
                                 <div class="col-md-6" id="dislike" (click)='decreaseLikes()'>

@@ -9,6 +9,7 @@ import { LeftSectionComponent } from './left-section/left-section.component';
 import { QuoteComponent } from './quote/quote.component';
 import { DetailsComponent } from './details/details.component';
 import { DateCountPipe } from './date-count.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DateCountPipe } from './date-count.pipe';
     LeftSectionComponent,
     QuoteComponent,
     DetailsComponent,
-    DateCountPipe
+    DateCountPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

@@ -3,11 +3,13 @@ export class Quotes {
     author: string;
     contributor: string;
     submittedDate: Date;
+    upvote: number;
 
-    constructor(quote: string, author: string, contributor: string, submittedDate: Date){
+    constructor(quote: string, author: string, contributor: string, submittedDate: Date, upvote: number){
         this.quote = quote;
         this.author = author;
         this.contributor = contributor;
         this.submittedDate = submittedDate;
+        this.upvote = 0;
     }
 }

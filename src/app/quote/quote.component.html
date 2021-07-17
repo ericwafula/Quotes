@@ -1,6 +1,6 @@
 <ul *ngFor='let quote of quotes; let i = index'>
     <div class="quote-card">
         <li> {{quote.quote}} </li>
-        <app-details [author] = 'quote' (isToDelete)='deleteCard($event, i)'></app-details>
+        <app-details [author] = 'quote' (isToDelete)='deleteCard($event, i)' (toIncreaseLikes)='increaseLikes($event, i)'></app-details>
     </div>
 </ul>
