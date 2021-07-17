@@ -36,6 +36,7 @@ p{
 #like img{
     position: inherit;
     right: 10px;
+    cursor: pointer;
 }
 
 #like p{
@@ -53,6 +54,7 @@ p{
 #dislike img{
     position: inherit;
     left: 5px;
+    cursor: pointer;
 }
 
 #dislike p{

@@ -24,13 +24,13 @@
                             <div class="row">
                                 <!-- like -->
                                 <div class="col-md-6" id="like">
-                                    <img src="../../assets/Images/like.svg" alt="like">
-                                    <p>5</p>
+                                    <img src="../../assets/Images/like.svg" alt="like" (click)='increaseLikes()'>
+                                    <p> {{like}} </p>
                                 </div>
                                 <!-- dislike -->
-                                <div class="col-md-6" id="dislike">
+                                <div class="col-md-6" id="dislike" (click)='decreaseLikes()'>
                                     <img src="../../assets/Images/dislike.svg" alt="dislike">
-                                    <p>6</p>
+                                    <p> {{dislike}} </p>
                                 </div>
                             </div>
                         </div>

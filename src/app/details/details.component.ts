@@ -17,6 +17,17 @@ export class DetailsComponent implements OnInit {
 
   constructor() { }
 
+  like: number = 0;
+  dislike: number = 0;
+
+  increaseLikes(){
+    return this.like++;
+  }
+
+  decreaseLikes(){
+    return this.dislike++;
+  }
+
   ngOnInit(): void {
   }
 
