@@ -39,3 +39,9 @@ textarea::placeholder{
     font-weight: bold;
     background-color: #9975CE;
 }
+
+.alert{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}

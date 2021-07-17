@@ -1,6 +1,24 @@
-<ul *ngFor='let quote of quotes; let i = index'>
-    <div class="quote-card">
-        <li> {{quote.quote}} </li>
-        <app-details [author] = 'quote' (isToDelete)='deleteCard($event, i)' (toIncreaseLikes)='increaseLikes($event, i)'></app-details>
+<div class="container-fluid">
+    <div class="row">
+        <!-- quotes -->
+        <div class="col-md-5">
+            <ul *ngFor='let quote of quotes; let i = index'>
+                <div class="quote-card">
+                    <li> {{quote.quote}} </li>
+                    <app-details [author] = 'quote' (isToDelete)='deleteCard($event, i)' (toIncreaseLikes)='increaseLikes($event, i)'></app-details>
+                </div>
+            </ul>
+        </div>
+        <!-- form -->
+        <div class="col-md-7">
+            <div class="container-fluid">
+                <div class="row" id="form-inner-section">
+                    <div class="col-md-10"id="form-position-section">
+                        <app-form (addQuote)="addNewQuote($event)"></app-form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</ul>
+</div>
+

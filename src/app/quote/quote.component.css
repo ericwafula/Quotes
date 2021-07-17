@@ -16,6 +16,20 @@ li{
     height: auto;
     border-radius: 20px;
     position: relative;
-    right: 30px;
+    right: 55px;
     margin-bottom: 60px;
+}
+
+#form-inner-section{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.form-position-section{
+    position: relative;
+}
+app-form{
+    position: relative;
+    left: 70px;
 }
