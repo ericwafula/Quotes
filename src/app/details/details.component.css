@@ -19,3 +19,56 @@ p{
     border-radius: 8px;
     cursor: pointer;
 }
+
+.like-dislike{
+    width: 100px;
+    border: solid #DFBFAA 1px;
+    height: 50px;
+    background-color: white;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+#like{
+    position: relative;
+}
+
+#like img{
+    position: inherit;
+    right: 10px;
+}
+
+#like p{
+    position: relative;
+    bottom: 20px;
+    font-size: 14px;
+    right: 10px;
+    color: #9975CE;
+}
+
+#dislike{
+    position: relative;
+}
+
+#dislike img{
+    position: inherit;
+    left: 5px;
+}
+
+#dislike p{
+    position: relative;
+    bottom: 20px;
+    font-size: 14px;
+    left: 15px;
+    color: #F18881;
+}
+
+.buttons-container{
+    position: relative;
+}
+
+.buttons{
+    position: relative;
+    right: 30px;
+    top: 20px;
+}

@@ -1,12 +1,12 @@
 <p> {{author.author}} </p>
-<p id="contributor">Submitted by {{author.contributor}} on Aug 30, 2020 (320 day(s) ago)</p>
+<p id="contributor">Submitted by {{author.contributor}} on {{author.submittedDate|date}}({{author.submittedDate|dateCount}} day(s) ago) </p>
 
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-7"></div>
         <div class="col-md-5">
-            <div class="container-fluid">
-                <div class="row">
+            <div class="container-fluid buttons-container">
+                <div class="row buttons">
                     <!-- delete -->
                     <div class="col-md-5">
                         <!-- button -->
@@ -19,6 +19,22 @@
                         </div>
                     </div>
                     <!-- like/dislike -->
+                    <div class="col-md-7">
+                        <div class="container-fluid like-dislike">
+                            <div class="row">
+                                <!-- like -->
+                                <div class="col-md-6" id="like">
+                                    <img src="../../assets/Images/like.svg" alt="like">
+                                    <p>5</p>
+                                </div>
+                                <!-- dislike -->
+                                <div class="col-md-6" id="dislike">
+                                    <img src="../../assets/Images/dislike.svg" alt="dislike">
+                                    <p>6</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
