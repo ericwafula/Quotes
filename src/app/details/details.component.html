@@ -13,7 +13,7 @@
                         <div class="container-fluid delete" (click)='deleteCard(true)'>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img src="../../assets/Images/Vector.svg" alt="delete">
+                                    <img [src]="deleteImagePath" alt="delete">
                                 </div>
                             </div>
                         </div>
@@ -24,12 +24,12 @@
                             <div class="row">
                                 <!-- like -->
                                 <div class="col-md-6" id="like">
-                                    <img src="../../assets/Images/like.svg" alt="like" (click)='increaseLikes(true)' appHighlight>
+                                    <img [src]="increaseLikesPath" alt="like" (click)='increaseLikes(true)' appHighlight>
                                     <p> {{author.upvote}} </p>
                                 </div>
                                 <!-- dislike -->
                                 <div class="col-md-6" id="dislike" (click)='decreaseLikes()'>
-                                    <img src="../../assets/Images/dislike.svg" alt="dislike">
+                                    <img [src]="decreaseLikesPath" alt="dislike">
                                     <p> {{dislike}} </p>
                                 </div>
                             </div>
