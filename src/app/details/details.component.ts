@@ -12,9 +12,9 @@ export class DetailsComponent implements OnInit {
   @Output() isToDelete = new EventEmitter<boolean>();
   @Output() toIncreaseLikes = new EventEmitter<boolean>();
 
-  deleteImagePath = "src/assets/Images/Vector.svg";
-  increaseLikesPath = "src/assets/Images/like.svg";
-  decreaseLikesPath = "src/assets/Images/dislike.svg";
+  deleteImagePath = "../../assets/Images/Vector.svg";
+  increaseLikesPath = "../../assets/Images/like.svg";
+  decreaseLikesPath = "../../assets/Images/dislike.svg";
 
   deleteCard(deleteNow: boolean){
     this.isToDelete.emit(deleteNow);
