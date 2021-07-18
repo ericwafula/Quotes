@@ -7,7 +7,7 @@ export class HighlightDirective {
 
   constructor(private elem: ElementRef) { }
 
-  private textTeco(action: string){
+  private textDeco(action: string){
     this.elem.nativeElement.style.textDecoration = action;
   }
 
