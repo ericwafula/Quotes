@@ -15,8 +15,11 @@ export class QuoteComponent implements OnInit {
     new Quotes("When something is important enough, you do it even if the odds are not in your favor.", "Elon Musk", "Eric Wathome", new Date(2020, 11, 14))
   ]
 
+
+  
+
   addNewQuote(quote:Quotes){
-    quote.submittedDate = new Date(quote.submittedDate);
+    // quote.submittedDate = new Date(quote.submittedDate);
     this.quotes.push(quote);
   }
 
